@@ -124,8 +124,9 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 
 # Testing (Test Cases)
-| No   | Test Case Name | Action     | Expected Result | Positive Case  | Negative Case |
-| ---  | -------------- | -----      | --------------  | -------------  | ------------  |
-| 1  |  |     |  |   |   |
+| User   | Test Case Name                | Action                   | Expected Result                      | Positive Case           | Negative Case |
+| ------ | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
+| User   | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
+|        |  |   |   |
 
 # Saran Untuk Pengembangan Selanjutnya
