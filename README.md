@@ -132,7 +132,7 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 |                | Check that user bisa melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
 |                | Check that user bisa melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
 | Restoran       | Check that restoran bisa menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan|
-| | Check t
+| | Check that restoran dapat menambah menu | Menekan tombol 'Tambah menu' | Restoran akan dialihkan ke page tambah menu | Restoran berhasil dialihkan |
 |
 
 # Saran Untuk Pengembangan Selanjutnya
