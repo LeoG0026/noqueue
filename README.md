@@ -108,7 +108,7 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 |                        |           |                                    |
 | Superadmin             | Create    | Membuat akun                       |
 |                        | Read      | Membaca data restoran              |
-|                        | Update    |                                    |
+|                        | Update    | Mengubah informasi restoran        |
 |                        | Delete    | Menghapus restoran                 |
 |                        |           |                                    |
 | Customer (User)        | Create    | Membuat akun                       |
