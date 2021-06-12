@@ -1,10 +1,4 @@
-<?php include ('server.php');
-if(isset($_GET['password_token']))
-{
-  $passToken = $_GET['password_token'];
-  resetPassword($passToken);
-}
-?>
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,72 +6,15 @@ if(isset($_GET['password_token']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Home Page</title>
+    <title>Login Page</title>
   </head>
   <body>
-  <?php 
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: login.php');
-  }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: index.php");
-  }
-?>
-    <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
-    <?php 
-              $user=$_SESSION['username'];
-              $query = mysqli_query($db, "select user_image from users where username='$user'");
-              while($users = mysqli_fetch_array($query))
-              {?> 
-                <?php $usr_img = "user_images/".$users['user_image'];
-                      $def_img = "user_images/default.png";
-                ?>
-                <div class="image-avatar">
-                    <a href="./profile.php">
-                     <img src= <?php 
-                     if(!empty($users['user_image']))
-                     {
-                      echo $usr_img;
-                     }
-                     else
-                     {
-                      echo $def_img;
-                     }
-                     ?> alt='image-avatar' />
-                    </a>
-        <?php }?>
-        <div class="auth-container" style="display: inline;">
-        <a id="masuk" href="./profile.php"><?php echo $_SESSION['username']; ?></a>
-		<!-- notification message -->
-        <?php if (isset($_SESSION['success'])) : ?>
-        <div class="error success" >
-          <h3>
-          <?php 
-            echo $_SESSION['success']; 
-            unset($_SESSION['success']);
-          ?>
-          </h3>
-        </div>
-        <?php endif ?>
-
-		<!-- logged in user information -->
-        <?php  if (isset($_SESSION['username'])) : ?>
-          <a id="logout" href="index.php?logout='1'" style="color: red;">logout</a>
-        <?php endif ?>
-    </div>
-      </div>
-      <a href="homepage.php">
+  <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
       <img style="position: absolute" src="./admin/images/logo.png" alt="logo" />
-        </a>
       <div class="center">
         <span class="judul">NoQ!</span>
         <br />
         <span class="motto">Makan enak tanpa antre</span>
-        <br />
-        <a style="color: white">Silahkan Cari Kota Anda Terlebih Dahulu</a>
       </div>
       <div class="search-location">
       <?php 
@@ -101,7 +38,7 @@ if(isset($_GET['password_token']))
                 </form>
       </div>
     </header>
-       <?php 
+    <?php 
                 if(isset($_POST['filter']))
                 {?>
                 <div class="content">
@@ -160,5 +97,23 @@ if(isset($_GET['password_token']))
               <?php }?>
       </div>
     </div></a>
-  </body>
+	<div class="modal-bg">
+    	<div class="modal-container">
+			<form method="post" action="reset_pass.php" class="form">
+				<?php include('error.php'); ?>
+				<div class="input-group">
+					<label>Password</label>
+					<input type="password" name="pass_1" >
+				</div>
+				<div class="input-group">
+					<label>Confirm Password</label>
+					<input type="password" name="pass_2">
+				</div>
+				<div class="input-group">
+					<button type="submit" class="btn" name="reset">Reset Password</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	</body>
 </html>

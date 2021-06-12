@@ -1,4 +1,5 @@
 <?php 
+include ('vendor/autoload.php');
 session_start();
 
 // initializing variables
@@ -6,12 +7,114 @@ $username = "";
 $email    = "";
 $errors = array(); 
 
+//constant
+define('EMAIL','noq.k05@gmail.com');
+define('PASS','noq051111');
+
+//set
+// Create the Transport
+$transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
+  ->setUsername(EMAIL)
+  ->setPassword(PASS);
+;
+
+// Create the Mailer using your created Transport
+$mailer = new Swift_Mailer($transport);
+
+
+function sendPasswordResetLink($userEmail,$token)
+{
+    global $mailer;
+
+    $body='<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title> Verify Email </title>
+    </head>
+    <body>
+      <p>
+        Hello,
+        Silahkan klik link dibawah berikut ini untuk me-reset password akun noq anda.
+      </p>
+      <a href="http://localhost/noqueue-main/index.php?password_token='. $token . '">
+      Reset Password
+      </a>
+    </body>
+      </html>';
+      
+    // Create a message
+$message = (new Swift_Message('Wonderful Subject'))
+->setFrom(EMAIL)
+->setTo($userEmail)
+->setBody($body,'text/html');
+
+// Send the message
+$result = $mailer->send($message);
+}
 // connect to the database
 $db = mysqli_connect('localhost','root', '', 'noq');
 if(!$db){
     die("Unable to connect to database!");
 }
-
+  //LUPA PASS
+  if(isset($_POST['recover_pass']))
+  {
+    $email = mysqli_real_escape_string($db,$_POST['email_recovery']);
+    if(empty($email))
+    {
+      echo 'Silahkan masukkan email anda';
+    }
+  
+    $user_check_query = "SELECT * FROM users WHERE email='$email' LIMIT 1";
+    $result = mysqli_query($db,$user_check_query);
+    $user = mysqli_fetch_assoc($result);
+    
+    if ($user) 
+    { // if user exist
+      if ($user['email'] != $email) 
+      {
+        array_push($errors, "Email tidak valid");
+      }
+    }
+    if(count($errors) == 0)
+    {
+      $token = $user['token'];
+      sendPasswordResetLink($email,$token);
+      header("location: pass_msg.php");
+      exit(0);
+    }
+  }
+  //RESET
+  if(isset($_POST['reset']))
+  {
+    $pass = mysqli_real_escape_string($db,$_POST['pass_1']);
+    $cpass = mysqli_real_escape_string($db,$_POST['pass_2']);
+    if (empty($pass) || empty($cpass)) {
+      array_push($errors, "Password Beda");
+    }
+    if(count($errors) == 0)
+    {
+      $pass = md5($pass);
+      $email = $_SESSION['email'];
+      $query = mysqli_query($db,"update users set password='$pass' where email='$email'");
+      if($query)
+      {
+        header("location: login.php");
+        exit(0);
+      }
+    }
+  }
+//author email
+function resetPassword($token)
+{
+  global $db;
+  $query = mysqli_query($db,"select * from users where token='$token' limit 1");
+  $user = mysqli_fetch_assoc($query);
+  $_SESSION['email'] = $user['email'];
+  header("location: reset_pass.php");
+  exit(0);
+}
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
     // receive all input values from the form
@@ -50,10 +153,11 @@ if (isset($_POST['reg_user'])) {
   
     // Finally, register user if there are no errors in the form
     if (count($errors) == 0) {
+        $token = bin2hex(random_bytes(50));
         $password = md5($password_1);//encrypt the password before saving in the database
         move_uploaded_file($_FILES['user_image']['tmp_name'], "user_images/$img");
-        $query = "INSERT INTO users (nama, username, email, password, no_hp, user_image) 
-                  VALUES('$nama','$username', '$email', '$password', '$no_hp', '$img')";
+        $query = "INSERT INTO users (nama, username, email, password, token, no_hp, user_image) 
+                  VALUES('$nama','$username', '$email', '$password', '$token','$no_hp', '$img')";
         $results = mysqli_query($db, $query);
         $_SESSION['username'] = $username;
         header('location: login.php');
@@ -343,6 +447,29 @@ if(isset($_POST['kembali']))
       unset($_SESSION['cart']);
       unset($_SESSION['orderid']);
       header("Location: homepage.php");
+    }
+  }
+}
+
+// RATING
+if(isset($_POST['rate']))
+{
+  $user = $_SESSION['username'];
+  $rate = mysqli_real_escape_string($db,$_POST['rating']);
+  $ripiw = mysqli_real_escape_string($db,$_POST['review']);
+  $id = mysqli_real_escape_string($db,$_POST['restoran_id']);
+  
+  if(empty($ripiw))
+  {
+    echo 'silahkan beri ulasan';
+  }
+  if(count($errors) == 0)
+  {
+    $query = mysqli_query($db,"insert into rating (rating_value,rating_text,resto_id,username) 
+    values ('$rate','$ripiw','$id','$user')");
+    if($query)
+    {
+      header("location: profile.php");
     }
   }
 }
