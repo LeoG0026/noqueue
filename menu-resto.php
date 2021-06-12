@@ -93,9 +93,25 @@
       </div>
     </header>
     <div class="content">
-      <div class="restaurant-images">
-        <img src="<?php echo $res_img;?>" alt="img-resto" width="800" height="500" />
-        <div class="more-image-container">
+      <div class="flex-row">
+        <div class="restaurant-images">
+          <img src="<?php echo $res_img;?>" alt="img-resto" width="800" height="500" />
+
+        </div>
+        <div class="table-container" >
+          <div class="flex-column">
+            <p style="margin: 20px 0px; text-align: center;">MEJA YANG TERSEDIA</p>
+            <div class="flex-row" style="justify-content: center;">
+              <div id="meja1" class="meja" style="width: 100px; height: 50px; margin: 10px;">Meja 1</div>
+            </div>
+            <div class="flex-row">
+              <div id="meja2" class="meja" style="width: 100px; height: 120px; margin: 10px;">Meja 2</div>
+              <div id="meja4" class="meja" style="width: 100px; height: 120px; margin: 10px; margin-left: auto;">Meja 4</div>
+            </div>
+             <div class="flex-row" style="justify-content: center;">
+              <div id="meja3" class="meja" style="width: 100px; height: 50px; margin: 10px;">Meja 3</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="atribut-restoran">
