@@ -8,6 +8,8 @@
   $email = $user['email'];
   $nama = $user['nama'];
   $no_hp = $user['no_hp'];
+
+  $resto_id = $_GET['resto_id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Noqueue</title>
+    <title>Review</title>
   </head>
   <body>
     <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
@@ -47,6 +49,7 @@
         </div>
       </div>
       <div class="riwayat-pemesanan">
+      <?php ?>
         <h2>Riwayat Pesanan</h2>
         <div class="card-pesanan">
           <div class="flex-row">
@@ -67,20 +70,30 @@
   </body>
   <div class="modal-bg">
     <div class="modal-container">
-      <form method="post" action="">
+      <form method="post" action="review.php?resto_id=<?php $resto_id;?>">
+      <?php $query=mysqli_query($db,"select * from restoran where resto_id='$resto_id'");
+      $name = mysqli_fetch_assoc($query);
+      ?>
         <div class="flex-column" style="text-align: center">
           <img src="admin/images/resto1.jpeg" alt="img-resto" />
-          <strong><p style="font-size: 1.5em">Nama Resto</p></strong>
+          <strong><p style="font-size: 1.5em"><?php echo $name['resto_name'];?></p></strong>
           <p style="margin-top: 20px; margin-bottom: 10px">Bagaimana pesananmu?</p>
+          <span style="font-size: 0.15 em">Silahkan Rate Restoran ini 1-5</span>
           <div class="flex-row" style="justify-content: center; margin-bottom: 10px">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+        <span style="font-size: 0.15 em">1</span>
+            <input type="radio" name="rating" value="1" checked>
+        <span style="font-size: 0.15 em">2</span>
+            <input type="radio" name="rating" value="2">
+        <span style="font-size: 0.15 em">3</span>
+            <input type="radio" name="rating" value="3">
+        <span style="font-size: 0.15 em">4</span>
+            <input type="radio" name="rating" value="4">
+        <span style="font-size: 0.15 em">5</span>
+            <input type="radio" name="rating" value="5">
+            <input type="hidden" name="restoran_id" value="<?php echo $_GET['resto_id'];?>">
           </div>
           <textarea name="review" id="review" cols="30" rows="10" placeholder="Tulis ulasanmu..."></textarea>
-          <input class="button" type="submit" value="Submit" style="margin-left: auto" />
+          <input class="button" type="submit" name='rate' value="Submit" style="margin-left: auto" />
         </div>
       </form>
     </div>

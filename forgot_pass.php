@@ -1,4 +1,4 @@
-<?php include ('server.php')?>
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,27 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Edit Profil</title>
+    <title>Home Page</title>
   </head>
   <body>
   <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
-    <?php 
-              $user=$_SESSION['username'];
-              $query = mysqli_query($db, "select user_image from users where username='$user'");
-              while($users = mysqli_fetch_array($query))
-              {?> 
-                <?php $usr_img = "user_images/".$users['user_image'];?>
-                <div class="image-avatar">
-                    <a href="./profile.php">
-                     <img src= <?php echo $usr_img;?> alt='image-avatar' />
-                    </a>
-        <?php }?>
-      <a href="./homepage.php">
-        <img
-          style="position: absolute; top: 0px; left: 0px"
-          src="./admin/images/logo.png"
-          alt="logo"
-      /></a>
+      <img style="position: absolute" src="./admin/images/logo.png" alt="logo" />
       <div class="center">
         <span class="judul">NoQ!</span>
         <br />
@@ -113,36 +97,22 @@
               <?php }?>
       </div>
     </div></a>
-    <div class="modal-bg">
+	<div class="modal-bg">
     	<div class="modal-container">
-      <?php
-        $user = $_SESSION['username'];
-        $query = mysqli_query($db, "select nama,email,no_hp,password from users where username='$user'");
-        $users = mysqli_fetch_array($query);
-        ?>
-			<form method="post" action="profile_edit.php" class="form" enctype="multipart/form-data">
+			<form method="post" action="forgot_pass.php" class="form">
 				<?php include('error.php'); ?>
-        <div class="input-group">
-					<input type="hidden" name="username" value="<?php echo $user ?>">
-				</div>
+                <p>
+                    Silahkan Masukkan Email anda
+                </p>
 				<div class="input-group">
-					<label>Nama</label>
-					<input type="text" name="nama" value="<?php echo $users['nama']; ?>">
+					<input type="email" name="email_recovery">
 				</div>
+
 				<div class="input-group">
-					<label>Email</label>
-					<input type="email" name="email" value="<?php echo $users['email']; ?>">
-				</div>
-        <div class="input-group">
-					<label>Nomor HP</label>
-					<input type="text" name="no_hp" value="<?php echo $users['no_hp']; ?>">
-				</div>
-				<div class="input-group">
-					<button type="submit" class="btn" name="edit">Update</button>
-          <a href="./profile.php">Kembali</a>
+					<button type="submit" class="btn" name="recover_pass">Kirim Form</button>
 				</div>
 			</form>
 		</div>
 	</div>
-  </body>
+	</body>
 </html>

@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Noqueue</title>
+    <title>Profil</title>
   </head>
   <body>
     <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
@@ -47,20 +47,29 @@
       </div>
       <div class="riwayat-pemesanan">
         <h2>Riwayat Pesanan</h2>
-        <div class="card-pesanan">
+        <?php
+        $user = $_SESSION['username'];
+        $query = mysqli_query($db,"select * from order_resto where order_user='$user' order by order_id desc limit 0,3");
+        while($list = mysqli_fetch_array($query))
+        {
+          $r_id = $list['res_id'];
+          $q = mysqli_query($db,"select * from restoran where resto_id ='$r_id'");
+          $resto = mysqli_fetch_assoc($q);
+          ?>
+          <div class="card-pesanan">
           <div class="flex-row">
             <img src="admin/images/resto1.jpeg" alt="foto-resto" width="50px" height="50px" />
-            <p style="margin-left: 10px">Nama Resto</p>
+            <p style="margin-left: 10px"><?php echo $resto['resto_name'];?></p>
           </div>
-          <a href="./review.php"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
+          <a style="margin-left: 10px">Order Status :<?php echo $list['order_status'];?></a>
+          <?php if($list['order_status']=='valid')
+          {
+            ?>
+          <a href="./review.php?resto_id=<?php echo $r_id;?>"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
         </div>
-        <div class="card-pesanan">
-          <div class="flex-row">
-            <img src="admin/images/resto1.jpeg" alt="foto-resto" width="50px" height="50px" />
-            <p style="margin-left: 10px">Nama Resto</p>
-          </div>
-          <a href="./review.php"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
-        </div>
+        <?php }
+        }
+        ?>
       </div>
     </div>
   </body>

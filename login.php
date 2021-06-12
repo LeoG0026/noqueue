@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Noqueue</title>
+    <title>Login Page</title>
   </head>
   <body>
   <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
@@ -114,6 +114,9 @@
 				</div>
 				<p>
 					Belum memiliki akun ? <a href="signup.php">Sign up</a>
+				</p>
+        <p>
+					Lupa Password ? <a href="forgot_pass.php">Recover Password</a>
 				</p>
 			</form>
 		</div>
