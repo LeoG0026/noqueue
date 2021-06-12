@@ -134,7 +134,9 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 | Restoran       | Check that restoran can go to NoQ | Melakukan login/sign up | Restoran akan dialihkan ke halaman utama | Restoran berhasil dialihkan | - |
 | | Check that restoran dapat menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan| - |
 | | Check that restoran dapat menambah menu | Menekan tombol 'Tambah menu' | Restoran akan dialihkan ke page tambah menu | Restoran berhasil dialihkan |
-|
+| | Check that restoran dapat edit/hapus kategori | Menekan tombol 'Edit' / ' Hapus' | Restoran akan mengubah kategori | Kategori berhasil diubah | -  | 
+| | Check that restoran dapat edit/hapus menu | Menekan tombol 'Edit' / 'Hapus' | Restoran mengubah menu | Menu berhasil diubah | - |
+| | Check that restoran dapat mengubah status pemesanan | Menekan tombol 'Valid' / 'Tidak Valid' pada page pemesanan | Restoran mengubah Status pemesanan  | Status pemeesanan berhasil diubah | - |
 
 # Saran Untuk Pengembangan Selanjutnya
 * Riwayat Pemesanan user
