@@ -367,15 +367,39 @@ textarea {
 }
 
 #menu-link {
-  background-color: #e1ffff;
+  background-color: #e6f4f1;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px 137px;
+  display: inline-block;
+  margin: 0px 2px;
+  height: 50px;
+  cursor: pointer;
 }
 
 #review-link {
   background-color: #94b0b2;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px 137px;
+  display: inline-block;
+  margin: 0px 2px;
+  height: 50px;
+  cursor: pointer;
 }
 
 #location-link {
   background-color: #ffb990;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px 137px;
+  display: inline-block;
+  margin: 0px 2px;
+  height: 50px;
+  cursor: pointer;
 }
 
 #tab-content-container {
@@ -420,7 +444,6 @@ textarea {
 }
 
 .review-container {
-  width: 100%;
   height: 400px;
   text-align: center;
 }
@@ -464,6 +487,19 @@ textarea {
 .pemesanan-input-container .add-remove-container {
   margin-left: auto;
   margin-right: 10px;
+}
+
+.review-card {
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.ulasan-container {
+  border-left: 1px solid black;
+  margin-left: 10px;
 }
 
 .dropdown-container {
