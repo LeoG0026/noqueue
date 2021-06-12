@@ -128,5 +128,6 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 | ------ | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
 | User   | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
 |        | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
+| | Check that user can go pembayaran page | Memilih menu, table, dan waktu | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
 
 # Saran Untuk Pengembangan Selanjutnya
