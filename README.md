@@ -127,6 +127,6 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 | User   | Test Case Name                | Action                   | Expected Result                      | Positive Case           | Negative Case |
 | ------ | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
 | User   | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
-|        |  |   |   |
+|        | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
 
 # Saran Untuk Pengembangan Selanjutnya
