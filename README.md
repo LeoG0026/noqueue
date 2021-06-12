@@ -16,7 +16,7 @@ butuh gambar homepage NoQ
 
 | Name                   | Nim       | Role            |
 | ---------------------- | --------- | --------------- |
-| Muhammad Daffa Subhan  | G64190018 | Back-end        |
+| Daffa Muhammad Subhan  | G64190013 | Back-end        |
 | Lesy Okviani           | G64190026 | Project Manager |
 | Bobby Williams K. Hara | G64190061 | Front-end       |
 | Muhammad Jazuli        | G64190081 | UI/UX Designer  |
