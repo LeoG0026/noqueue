@@ -124,13 +124,15 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 
 # Testing (Test Cases)
-| User   | Test Case Name                | Action                   | Expected Result                      | Positive Case           | Negative Case |
-| ------ | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
-| User   | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
-|        | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
-| | Check that user bisa melakukan pemesanan | memilih menu, table, dan waktu datang | Pesanan user akan dicatat | User berhasil menambah pemesanan | - |
-| | Check that user bisa melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
-| | Check that user bisa melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
-| Restoran | Check that restoran bisa menambah kategori | Menekan tombol
+| domain class   | Test Case Name                | Action                   | Expected Result                      | Positive Case           | Negative Case |
+| -------------- | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
+| User           | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
+|                | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
+|                | Check that user bisa melakukan pemesanan | memilih menu, table, dan waktu datang | Pesanan user akan dicatat | User berhasil menambah pemesanan | - |
+|                | Check that user bisa melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
+|                | Check that user bisa melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
+| Restoran       | Check that restoran bisa menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan|
+| | Check t
+|
 
 # Saran Untuk Pengembangan Selanjutnya
