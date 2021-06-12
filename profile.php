@@ -52,14 +52,14 @@
             <img src="admin/images/resto1.jpeg" alt="foto-resto" width="50px" height="50px" />
             <p style="margin-left: 10px">Nama Resto</p>
           </div>
-          <a href="./review.html"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
+          <a href="./review.php"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
         </div>
         <div class="card-pesanan">
           <div class="flex-row">
             <img src="admin/images/resto1.jpeg" alt="foto-resto" width="50px" height="50px" />
             <p style="margin-left: 10px">Nama Resto</p>
           </div>
-          <a href="./review.html"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
+          <a href="./review.php"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
         </div>
       </div>
     </div>
