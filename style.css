@@ -133,11 +133,13 @@ h3 {
   font-size: 2rem;
 }
 
-button {
+button,
+.button {
   height: 30px;
   width: 100px;
   background-color: aqua;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .cards {
@@ -306,11 +308,11 @@ textarea {
 }
 
 .riwayat-pemesanan {
-  height: 250px;
   width: 200px;
   border: blue solid;
   margin-top: 40px;
   margin-right: 40px;
+  padding: 20px;
 }
 
 .riwayat-pemesanan > h2 {
@@ -525,4 +527,21 @@ textarea {
 .pembayaran-input-container input {
   margin-top: 10px;
   transform: scale(1.5);
+}
+
+/* Riwayat Pemesanan */
+.card-pesanan {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+/* Review */
+.checked {
+  color: orange;
+}
+
+.fa {
+  font-size: 1.5em;
 }
