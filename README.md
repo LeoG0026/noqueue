@@ -128,17 +128,19 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 | -------------- | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
 | User           | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
 |                | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
-|                | Check that user dapat mencari restoran | Memilih lokasi | User akan diperlihatkan restoran sesuai lokasi | Restoran berhasil ditampilkan | - |
 |                | Check that user dapat melakukan pemesanan | memilih menu, table, dan waktu datang | Pesanan user akan dicatat | User berhasil menambah pemesanan | - |
 |                | Check that user dapat melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
 |                | Check that user dapat melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
 | Restoran       | Check that restoran can go to NoQ | Melakukan login/sign up | Restoran akan dialihkan ke halaman utama | Restoran berhasil dialihkan | - |
-| | Check that restoran dapat menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan| - |
-| | Check that restoran dapat menambah menu | Menekan tombol 'Tambah menu' | Restoran akan dialihkan ke page tambah menu | Restoran berhasil dialihkan |
-| | Check that restoran dapat edit/hapus kategori | Menekan tombol 'Edit' / ' Hapus' | Restoran akan mengubah kategori | Kategori berhasil diubah | -  | 
-| | Check that restoran dapat edit/hapus menu | Menekan tombol 'Edit' / 'Hapus' | Restoran mengubah menu | Menu berhasil diubah | - |
-| | Check that restoran dapat mengubah status pemesanan | Menekan tombol 'Valid' / 'Tidak Valid' pada page pemesanan | Restoran mengubah Status pemesanan  | Status pemeesanan berhasil diubah | - |
-
+|                | Check that restoran dapat menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan| - |
+|                | Check that restoran dapat menambah menu | Menekan tombol 'Tambah menu' | Restoran akan dialihkan ke page tambah menu | Restoran berhasil dialihkan |-|
+|                | Search Kategori Menu | Memasukan Keyword yang tidak sesuai dengan database | Admin tidak akan menemukan kategori yang sesuai dengan Keyword yang dicari |- | Admin tidak akan menemukan kategori yang sesuai Keyword dan hasil pencarian akan kosong |
+|                | Search Menu | Memasukan Keyword yang tidak sesuai dengan database |  Admin tidak akan menemukan menu yang sesuai Keyword yang dicari |- | Admin tidak akan menemukan menu yang sesuai Keyword dan hasil pencarian akan kosong |
+|                | Search data transaksi | Memasukan Keyword yang tidak sesuai dengan database | Admin tidak akan menemukan data transaksi yang sesuai dengan Keyword yang dicari | - | Admin tidak akan menemukan data transaksi yang sesuai Keyword dan hasil pencarian akan kosong |
+|                | Remove Kategori Menu | Menekan tombol 'hapus' pada tabel | Kategori menu yang terdapat dalam tabel akan otomatis hilang | Admin berhasil menghapus kategori menu pada tabel kategori | - |
+|                | Remove Menu | Menekan tombol 'hapus' pada tabel | Menu yang terdapat dalam tabel akan otomatis hilang |  Admin berhasil menghapus menu pada tabel menu  | - |
+|                | Remove data transaksi | Menekan tombol 'hapus' pada tabel | Data transanski yang terdapat dalam tabel akan otomatis hilang | Admin berhasil menghapus transaksi pada tabel data transaksi pembayaran - |
+|                | Change Status Pembayran | Menekan tombol 'valid' berwarna hijau atau 'invalid'berwarna merah pada data transaksi | status pembayaran user akan berubah menjadi warna hijau jika valid dan jika invalid akan berwarna merah | Admin berhasil megubah status pembayaran |- |
 # Saran Untuk Pengembangan Selanjutnya
 * Riwayat Pemesanan user
 * Cetak struk hasil pembayaran
