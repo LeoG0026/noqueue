@@ -1,4 +1,5 @@
 # NoQ (NoQueue)
+butuh gambar homepage NoQ
 
 # Laporan Akhir Projek
 
@@ -122,6 +123,12 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 
 # Hasil Implementasi
 Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
+butuh ss webapps dari admin, user, superadmin
+
+nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
+### link user
+### link admin
+### link superadmin
 
 # Testing (Test Cases)
 | domain class   | Test Case Name                | Action                   | Expected Result                      | Positive Case           | Negative Case |
