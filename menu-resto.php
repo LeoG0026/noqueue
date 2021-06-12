@@ -252,7 +252,38 @@
 
         </div>
         <div id="review-content" class="hidden">
-          <div class="review-container">REVIEW</div>
+          <div class="review-container flex-column">
+            <div class="review-card flex-row">
+              <div class="flex-column">
+                <p>Nama User</p>
+                <div class="flex-row">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                </div>
+              </div>
+              <div class="ulasan-container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti quos ipsam tempore velit, illo voluptatum quo totam nisi recusandae excepturi, iusto aliquid ut a itaque aliquam. Nulla, accusantium atque!
+              </div>
+            </div>
+            <div class="review-card flex-row">
+              <div class="flex-column">
+                <p>Nama User</p>
+                <div class="flex-row">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                    <img src="admin/images/star-icon.png" alt="star-icon">
+                </div>
+              </div>
+              <div class="ulasan-container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti quos ipsam tempore velit, illo voluptatum quo totam nisi recusandae excepturi, iusto aliquid ut a itaque aliquam. Nulla, accusantium atque!
+              </div>
+            </div>
+          </div>
         </div>
         <div id="location-content" class="hidden">
           <div class="location-container">LOCATION</div>
