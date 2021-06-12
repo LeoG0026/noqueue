@@ -128,10 +128,11 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
 | -------------- | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
 | User           | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
 |                | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
-|                | Check that user bisa melakukan pemesanan | memilih menu, table, dan waktu datang | Pesanan user akan dicatat | User berhasil menambah pemesanan | - |
-|                | Check that user bisa melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
-|                | Check that user bisa melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
-| Restoran       | Check that restoran bisa menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan|
+|                | Check that user dapat melakukan pemesanan | memilih menu, table, dan waktu datang | Pesanan user akan dicatat | User berhasil menambah pemesanan | - |
+|                | Check that user dapat melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
+|                | Check that user dapat melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
+| Restoran       | Check that restoran can go to NoQ | Melakukan login/sign up | Restoran akan dialihkan ke halaman utama | Restoran berhasil dialihkan | - |
+| | Check that restoran dapat menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan| - |
 | | Check that restoran dapat menambah menu | Menekan tombol 'Tambah menu' | Restoran akan dialihkan ke page tambah menu | Restoran berhasil dialihkan |
 |
 
