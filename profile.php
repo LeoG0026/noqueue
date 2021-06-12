@@ -21,11 +21,7 @@
   <body>
     <header class="header" style="background-image: url(./admin/images/cover-resto.jpeg)">
       <a href="./homepage.php">
-        <img
-          style="position: absolute; top: 0px; left: 0px"
-          src="./admin/images/logo.png"
-          alt="logo"
-        />
+        <img style="position: absolute; top: 0px; left: 0px" src="./admin/images/logo.png" alt="logo" />
       </a>
       <div class="center">
         <span class="judul">NoQ!</span>
@@ -36,22 +32,35 @@
     <div class="profile-container">
       <div class="image-biodata-container">
         <div class="edit-profile">
-          <div class="profile-image" style="background-image: url('<?php echo $res_img;?>');">
-          </div>
+          <div class="profile-image" style="background-image: url('<?php echo $res_img;?>')"></div>
           <a href="./image_profile_edit.php">Edit Profile Picture</a>
           <a href="./profile_edit.php">Edit profile</a>
           <a href="./pass_edit.php">Edit Password </a>
           <a href="./homepage.php">Kembali</a>
         </div>
         <div class="biodata">
-            <h2><?php echo $nama; ?></h2>
-            <p><?php echo $username; ?></p>
-            <p><?php echo $email; ?></p>
-            <p><?php echo $no_hp; ?></p>
+          <h2><?php echo $nama; ?></h2>
+          <p><?php echo $username; ?></p>
+          <p><?php echo $email; ?></p>
+          <p><?php echo $no_hp; ?></p>
         </div>
       </div>
       <div class="riwayat-pemesanan">
         <h2>Riwayat Pesanan</h2>
+        <div class="card-pesanan">
+          <div class="flex-row">
+            <img src="admin/images/resto1.jpeg" alt="foto-resto" width="50px" height="50px" />
+            <p style="margin-left: 10px">Nama Resto</p>
+          </div>
+          <a href="./review.html"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
+        </div>
+        <div class="card-pesanan">
+          <div class="flex-row">
+            <img src="admin/images/resto1.jpeg" alt="foto-resto" width="50px" height="50px" />
+            <p style="margin-left: 10px">Nama Resto</p>
+          </div>
+          <a href="./review.html"> <button style="width: 100%; margin-top: 10px; cursor: pointer">Rate Order</button></a>
+        </div>
       </div>
     </div>
   </body>
