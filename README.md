@@ -153,7 +153,7 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 ![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
 ![data-laporan](/images-laporan/admin/data-laporan.jpg)
 
-### 3. Superadmin
+### 3. Super Admin
 
 ![main](/images-laporan/superadmin/main.jpg)
 ![register](/images-laporan/superadmin/register.jpg)
@@ -199,4 +199,5 @@ nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 - Penyedian Vouchers diskon
 - Pembayaran secara otomatis tanpa harus upload bukti pembayaran
 - Jumlah menu makanan yang tersedia
-- fitur Search restoran bisa dicari secara langsung
+- Fitur Search restoran bisa dicari secara langsung
+- Tampilan web yang responsive
