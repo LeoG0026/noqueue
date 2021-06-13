@@ -131,7 +131,16 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 
 ## Screenshot Sistem
 
+Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
+
 1. Superadmin
+   ![add-category](/images-laporan/add-category.jpg)
+   ![add-menu](/images-laporan/add-menu.jpg)
+   ![data-category](/images-laporan/data-category.jpg)
+   ![data-laporan](/images-laporan/data-laporan.jpg)
+   ![data-menu](/images-laporan/data-menu.jpg)
+   ![data-transaksi](/images-laporan/data-transaksi.jpg)
+   ![master-data](/images-laporan/master-data.jpg)
 
 2. Admin
 
