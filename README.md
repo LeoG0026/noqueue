@@ -151,6 +151,13 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
    ![data-laporan](/images-laporan/admin/data-laporan.jpg)
 
 3. User
+   ![homepage](/images-laporan/user/homepage.jpg)
+   ![profile](/images-laporan/user/profile.jpg)
+   ![meja](/images-laporan/user/meja.jpg)
+   ![menu](/images-laporan/user/menu.jpg)
+   ![pemesanan](/images-laporan/user/pemesanan.jpg)
+   ![review](/images-laporan/user/review.jpg)
+   ![bukti-pembayaran](/images-laporan/admin/bukti-pembayaran.jpg)
 
 nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 
