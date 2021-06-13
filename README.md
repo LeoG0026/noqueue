@@ -133,14 +133,15 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 
 Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 
-1. User
-   ![homepage](/images-laporan/user/homepage.jpg)
-   ![profile](/images-laporan/user/profile.jpg)
-   ![meja](/images-laporan/user/meja.jpg)
-   ![menu](/images-laporan/user/menu.jpg)
-   ![pemesanan](/images-laporan/user/pemesanan.jpg)
-   ![review](/images-laporan/user/review.jpg)
-   ![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
+### 1. User
+
+![homepage](/images-laporan/user/homepage.jpg)
+![profile](/images-laporan/user/profile.jpg)
+![meja](/images-laporan/user/meja.jpg)
+![menu](/images-laporan/user/menu.jpg)
+![pemesanan](/images-laporan/user/pemesanan.jpg)
+![review](/images-laporan/user/review.jpg)
+![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
 
 2. Admin
    ![master-data](/images-laporan/admin/master-data.jpg)
