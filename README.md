@@ -142,13 +142,13 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
    ![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
    ![table-resto](/images-laporan/superadmin/table-resto.jpg)
 2. Admin
-   ![add-category](/images-laporan/superadmin/add-category.jpg)
-   ![add-menu](/images-laporan/admin/add-menu.jpg)
-   ![data-category](/images-laporan/admin/data-category.jpg)
-   ![data-laporan](/images-laporan/admin/data-laporan.jpg)
-   ![data-menu](/images-laporan/admin/data-menu.jpg)
-   ![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
    ![master-data](/images-laporan/admin/master-data.jpg)
+   ![data-category](/images-laporan/admin/data-category.jpg)
+   ![add-category](/images-laporan/admin/add-category.jpg)
+   ![data-menu](/images-laporan/admin/data-menu.jpg)
+   ![add-menu](/images-laporan/admin/add-menu.jpg)
+   ![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
+   ![data-laporan](/images-laporan/admin/data-laporan.jpg)
 
 3. User
 
