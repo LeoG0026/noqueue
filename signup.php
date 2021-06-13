@@ -126,7 +126,7 @@
 				<input type="text" name="no_hp">
 				</div>
         <div class="input-group">
-					<label>Foto Profil</label>
+					<label>Foto Profil (opsional)</label>
 					<input type="file" name="user_image" accept=".png, .jpg, .jpeg">
 				</div>
 				<div class="input-group">
