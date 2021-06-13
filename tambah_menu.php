@@ -201,23 +201,24 @@ if($query)
 				 while($menu = mysqli_fetch_assoc($query))
 				 {?>
                 <td><?php echo $i++;?></td>
-                <td><?php
-                    echo $categories['category_name'];
-                ?></td>
                 <td><?php echo $menu['menu_name'];?></td>
-                <td><?php echo "menu_images/".$menu['menu_image'];?></td>
-                <td></td>
+                <td><img src="<?php echo "menu_images/".$menu['menu_image'];?>" style="height:100px;"></td>
+                <td><?php echo number_format($menu['menu_price'],2);?></td>
                 <td>
-                  <button id="button-edit" class="edit-menu">
-                    <img src="./images/edit-icon.png" alt="edit-icon" style="width: 20px; height: 20px" />
+                  <button>
+                    <a href="editMenu.php?menu_id=<?php echo $menu['menu_id'];?>">
+                      EDIT MENU
+                    </a> 
                   </button>
                 </td>
                 <td>
-                  <button id="button-hapus" class="link">
+                <button id="button-hapus" class="link">
+                <a href="deleteMen.php?menu_id=<?php echo $menu['menu_id'];?>">
                     <img src="./images/hapus-icon.png" alt="hapus-icon" style="width: 20px; height: 20px" />
-                  </button>
+                    </a>
+                    </button>
                 </td>
-              </tr>
+                </tr>
               <?php }
 			  ?>
             </table>
@@ -225,7 +226,7 @@ if($query)
           <div id="modal-bg-kategori" class="hidden">
             <div class="modal-bg">
               <div class="modal-container">
-                <form method="post" action="master_data.php">
+                <form method="post" action="tambah_menu.php">
                   <strong><label for="kategorimenu">Nama Kategori Menu</label></strong
                   ><br />
                   <input type="text" name="cat" id="categories" />
