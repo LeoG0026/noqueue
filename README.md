@@ -134,15 +134,21 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 
 1. Superadmin
-   ![add-category](/images-laporan/admin/add-category.jpg)
+   ![main](/images-laporan/superadmin/main.jpg)
+   ![register](/images-laporan/superadmin/register.jpg)
+   ![form-tambah-resto](/images-laporan/superadmin/form-tambah-resto.jpg)
+   ![form-tambah-kota](/images-laporan/superadmin/form-tambah-kota.jpg)
+   ![table-admin](/images-laporan/superadmin/table-admin.jpg)
+   ![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
+   ![table-resto](/images-laporan/superadmin/table-resto.jpg)
+2. Admin
+   ![add-category](/images-laporan/superadmin/add-category.jpg)
    ![add-menu](/images-laporan/admin/add-menu.jpg)
    ![data-category](/images-laporan/admin/data-category.jpg)
    ![data-laporan](/images-laporan/admin/data-laporan.jpg)
    ![data-menu](/images-laporan/admin/data-menu.jpg)
    ![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
    ![master-data](/images-laporan/admin/master-data.jpg)
-
-2. Admin
 
 3. User
 
