@@ -133,14 +133,15 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 
 Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 
-1. Superadmin
-   ![main](/images-laporan/superadmin/main.jpg)
-   ![register](/images-laporan/superadmin/register.jpg)
-   ![form-tambah-resto](/images-laporan/superadmin/form-tambah-resto.jpg)
-   ![form-tambah-kota](/images-laporan/superadmin/form-tambah-kota.jpg)
-   ![table-admin](/images-laporan/superadmin/table-admin.jpg)
-   ![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
-   ![table-resto](/images-laporan/superadmin/table-resto.jpg)
+1. User
+   ![homepage](/images-laporan/user/homepage.jpg)
+   ![profile](/images-laporan/user/profile.jpg)
+   ![meja](/images-laporan/user/meja.jpg)
+   ![menu](/images-laporan/user/menu.jpg)
+   ![pemesanan](/images-laporan/user/pemesanan.jpg)
+   ![review](/images-laporan/user/review.jpg)
+   ![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
+
 2. Admin
    ![master-data](/images-laporan/admin/master-data.jpg)
    ![data-category](/images-laporan/admin/data-category.jpg)
@@ -150,14 +151,14 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
    ![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
    ![data-laporan](/images-laporan/admin/data-laporan.jpg)
 
-3. User
-   ![homepage](/images-laporan/user/homepage.jpg)
-   ![profile](/images-laporan/user/profile.jpg)
-   ![meja](/images-laporan/user/meja.jpg)
-   ![menu](/images-laporan/user/menu.jpg)
-   ![pemesanan](/images-laporan/user/pemesanan.jpg)
-   ![review](/images-laporan/user/review.jpg)
-   ![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
+3. Superadmin
+   ![main](/images-laporan/superadmin/main.jpg)
+   ![register](/images-laporan/superadmin/register.jpg)
+   ![form-tambah-resto](/images-laporan/superadmin/form-tambah-resto.jpg)
+   ![form-tambah-kota](/images-laporan/superadmin/form-tambah-kota.jpg)
+   ![table-admin](/images-laporan/superadmin/table-admin.jpg)
+   ![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
+   ![table-resto](/images-laporan/superadmin/table-resto.jpg)
 
 nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 
