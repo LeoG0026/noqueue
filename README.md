@@ -1,4 +1,5 @@
 # NoQ (NoQueue)
+
 butuh gambar homepage NoQ
 
 # Laporan Akhir Projek
@@ -47,15 +48,19 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 - Sebagai pemilik restoran, agar dapat melihat laporan pemesanan, saya dapat melihat di bagian data laporan
 
 # Ruang Lingkup Pengembangan
+
 ## Software
-|            |                  |
+
+|                  |                       |
 | ---------------- | --------------------- |
 | Operating System | Windows 10, Linux     |
 | Text Editor/IDE  | VS Code, Sublime Text |
 | Database         | MySQL                 |
 | Design           | Figma                 |
 | Server           | Apache                |
+
 ## Hardware
+
 | <!-- -->      | <!-- -->            |
 | ------------- | ------------------- |
 | Processor     | Intel Core i5-4210U |
@@ -64,6 +69,7 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 | Storage       | 1 TB                |
 
 ## Tech Stack
+
 | <!-- -->               | <!-- -->                       |
 | ---------------------- | ------------------------------ |
 | Collaboration Platform | Github                         |
@@ -94,65 +100,77 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 ## Fungsi Utama yang Dikembangkan
 
 ## Fungsi CRUD
-| Domain Class           | CRUD      | Role                               |
-| ---------------------- | --------- | ---------------------------------- |
-| Restoran (Admin)       | Create    | Membuat akun                       |
-|                        |           | Membuat Kategori dan menu restoran |
-|                        |           | Membuat meja restoran              |
-|                        | Read      | Membaca pesanan                    |
-|                        |           | Membaca pembayaran                 |
-|                        |           | Membaca laporan transaksi          |
-|                        | Update    | Mengubah kategori dan menu         |
-|                        |           | Menyelesaikan transaksi            |
-|                        | Delete    | Menghapus kategori dan menu        |
-|                        |           | Menghapus restoran                 |
-|                        |           |                                    |
-| Superadmin             | Create    | Membuat akun                       |
-|                        | Read      | Membaca data restoran              |
-|                        | Update    | Mengubah informasi restoran        |
-|                        | Delete    | Menghapus restoran                 |
-|                        |           |                                    |
-| Customer (User)        | Create    | Membuat akun                       |
-|                        |           | Membuat pesanan                    |
-|                        | Read      | Membaca kategori dan menu restoran |
-|                        | Update    | Melakukan pembayaran               |
-|                        |           | Mengubah pemesanan                 |
-|                        |           | Mengubah informasi akun            |
-|                        | Delete    | Menghapus akun                     |
 
+| Domain Class     | CRUD   | Role                               |
+| ---------------- | ------ | ---------------------------------- |
+| Restoran (Admin) | Create | Membuat akun                       |
+|                  |        | Membuat Kategori dan menu restoran |
+|                  |        | Membuat meja restoran              |
+|                  | Read   | Membaca pesanan                    |
+|                  |        | Membaca pembayaran                 |
+|                  |        | Membaca laporan transaksi          |
+|                  | Update | Mengubah kategori dan menu         |
+|                  |        | Menyelesaikan transaksi            |
+|                  | Delete | Menghapus kategori dan menu        |
+|                  |        | Menghapus restoran                 |
+|                  |        |                                    |
+| Superadmin       | Create | Membuat akun                       |
+|                  | Read   | Membaca data restoran              |
+|                  | Update | Mengubah informasi restoran        |
+|                  | Delete | Menghapus restoran                 |
+|                  |        |                                    |
+| Customer (User)  | Create | Membuat akun                       |
+|                  |        | Membuat pesanan                    |
+|                  | Read   | Membaca kategori dan menu restoran |
+|                  | Update | Melakukan pembayaran               |
+|                  |        | Mengubah pemesanan                 |
+|                  |        | Mengubah informasi akun            |
+|                  | Delete | Menghapus akun                     |
 
 # Hasil Implementasi
-Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
-butuh ss webapps dari admin, user, superadmin
+
+## Screenshot Sistem
+
+1. Superadmin
+
+2. Admin
+
+3. User
 
 nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
+
 ### link user
+
 ### link admin
+
 ### link superadmin
 
 # Testing (Test Cases)
-| domain class   | Test Case Name                | Action                   | Expected Result                      | Positive Case           | Negative Case |
-| -------------- | ----------------------------- | ------------------------ | ------------------------------------ | ----------------------  | ------------  |
-| User           | Check that user can go to NoQ | Melakukan login/sign up  | User akan dialihkan ke halaman utama | User berhasil dialihkan | -             |
-|                | Check that user can go to restoran page | Memilih salah satu restoran | User akan dialihkan ke page restoran | User berhasil dialihkan | - |
-|                | Check that user dapat melakukan pemesanan | memilih menu, table, dan waktu datang | Pesanan user akan dicatat | User berhasil menambah pemesanan | - |
-|                | Check that user dapat melakukan pembayaran | Menekan tombol 'Bayar' | User akan dialihkan ke page pembayaran | User berhasil dialihkan | - |
-|                | Check that user dapat melihat pemesanan | Menekan tombol pemesanan | User akan dialihkan ke page pemesanan | User berhasil dialihkan | - |
-| Restoran       | Check that restoran can go to NoQ | Melakukan login/sign up | Restoran akan dialihkan ke halaman utama | Restoran berhasil dialihkan | - |
-|                | Check that restoran dapat menambah kategori | Menekan tombol 'Tambah kategori' | Restoran akan dialihkan ke page tambah kategori | Restoran berhasil dialhikan| - |
-|                | Check that restoran dapat menambah menu | Menekan tombol 'Tambah menu' | Restoran akan dialihkan ke page tambah menu | Restoran berhasil dialihkan |-|
-|                | Search Kategori Menu | Memasukan Keyword yang tidak sesuai dengan database | Admin tidak akan menemukan kategori yang sesuai dengan Keyword yang dicari |- | Admin tidak akan menemukan kategori yang sesuai Keyword dan hasil pencarian akan kosong |
-|                | Search Menu | Memasukan Keyword yang tidak sesuai dengan database |  Admin tidak akan menemukan menu yang sesuai Keyword yang dicari |- | Admin tidak akan menemukan menu yang sesuai Keyword dan hasil pencarian akan kosong |
-|                | Search data transaksi | Memasukan Keyword yang tidak sesuai dengan database | Admin tidak akan menemukan data transaksi yang sesuai dengan Keyword yang dicari | - | Admin tidak akan menemukan data transaksi yang sesuai Keyword dan hasil pencarian akan kosong |
-|                | Remove Kategori Menu | Menekan tombol 'hapus' pada tabel | Kategori menu yang terdapat dalam tabel akan otomatis hilang | Admin berhasil menghapus kategori menu pada tabel kategori | - |
-|                | Remove Menu | Menekan tombol 'hapus' pada tabel | Menu yang terdapat dalam tabel akan otomatis hilang |  Admin berhasil menghapus menu pada tabel menu  | - |
-|                | Remove data transaksi | Menekan tombol 'hapus' pada tabel | Data transanski yang terdapat dalam tabel akan otomatis hilang | Admin berhasil menghapus transaksi pada tabel data transaksi pembayaran - |
-|                | Change Status Pembayran | Menekan tombol 'valid' berwarna hijau atau 'invalid'berwarna merah pada data transaksi | status pembayaran user akan berubah menjadi warna hijau jika valid dan jika invalid akan berwarna merah | Admin berhasil megubah status pembayaran |- |
+
+| domain class | Test Case Name                              | Action                                                                                 | Expected Result                                                                                         | Positive Case                                                             | Negative Case                                                                                 |
+| ------------ | ------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| User         | Check that user can go to NoQ               | Melakukan login/sign up                                                                | User akan dialihkan ke halaman utama                                                                    | User berhasil dialihkan                                                   | -                                                                                             |
+|              | Check that user can go to restoran page     | Memilih salah satu restoran                                                            | User akan dialihkan ke page restoran                                                                    | User berhasil dialihkan                                                   | -                                                                                             |
+|              | Check that user dapat melakukan pemesanan   | memilih menu, table, dan waktu datang                                                  | Pesanan user akan dicatat                                                                               | User berhasil menambah pemesanan                                          | -                                                                                             |
+|              | Check that user dapat melakukan pembayaran  | Menekan tombol 'Bayar'                                                                 | User akan dialihkan ke page pembayaran                                                                  | User berhasil dialihkan                                                   | -                                                                                             |
+|              | Check that user dapat melihat pemesanan     | Menekan tombol pemesanan                                                               | User akan dialihkan ke page pemesanan                                                                   | User berhasil dialihkan                                                   | -                                                                                             |
+| Restoran     | Check that restoran can go to NoQ           | Melakukan login/sign up                                                                | Restoran akan dialihkan ke halaman utama                                                                | Restoran berhasil dialihkan                                               | -                                                                                             |
+|              | Check that restoran dapat menambah kategori | Menekan tombol 'Tambah kategori'                                                       | Restoran akan dialihkan ke page tambah kategori                                                         | Restoran berhasil dialhikan                                               | -                                                                                             |
+|              | Check that restoran dapat menambah menu     | Menekan tombol 'Tambah menu'                                                           | Restoran akan dialihkan ke page tambah menu                                                             | Restoran berhasil dialihkan                                               | -                                                                                             |
+|              | Search Kategori Menu                        | Memasukan Keyword yang tidak sesuai dengan database                                    | Admin tidak akan menemukan kategori yang sesuai dengan Keyword yang dicari                              | -                                                                         | Admin tidak akan menemukan kategori yang sesuai Keyword dan hasil pencarian akan kosong       |
+|              | Search Menu                                 | Memasukan Keyword yang tidak sesuai dengan database                                    | Admin tidak akan menemukan menu yang sesuai Keyword yang dicari                                         | -                                                                         | Admin tidak akan menemukan menu yang sesuai Keyword dan hasil pencarian akan kosong           |
+|              | Search data transaksi                       | Memasukan Keyword yang tidak sesuai dengan database                                    | Admin tidak akan menemukan data transaksi yang sesuai dengan Keyword yang dicari                        | -                                                                         | Admin tidak akan menemukan data transaksi yang sesuai Keyword dan hasil pencarian akan kosong |
+|              | Remove Kategori Menu                        | Menekan tombol 'hapus' pada tabel                                                      | Kategori menu yang terdapat dalam tabel akan otomatis hilang                                            | Admin berhasil menghapus kategori menu pada tabel kategori                | -                                                                                             |
+|              | Remove Menu                                 | Menekan tombol 'hapus' pada tabel                                                      | Menu yang terdapat dalam tabel akan otomatis hilang                                                     | Admin berhasil menghapus menu pada tabel menu                             | -                                                                                             |
+|              | Remove data transaksi                       | Menekan tombol 'hapus' pada tabel                                                      | Data transanski yang terdapat dalam tabel akan otomatis hilang                                          | Admin berhasil menghapus transaksi pada tabel data transaksi pembayaran - |
+|              | Change Status Pembayran                     | Menekan tombol 'valid' berwarna hijau atau 'invalid'berwarna merah pada data transaksi | status pembayaran user akan berubah menjadi warna hijau jika valid dan jika invalid akan berwarna merah | Admin berhasil megubah status pembayaran                                  | -                                                                                             |
+
 # Saran Untuk Pengembangan Selanjutnya
-* Riwayat Pemesanan user
-* Cetak struk hasil pembayaran
-* Deskripsi dari menu makanan
-* Penyedian Vouchers diskon 
-* Pembayaran secara otomatis tanpa harus upload bukti pembayaran
-* Jumlah menu makanan yang tersedia
-* fitur Search restoran bisa dicari secara langsung 
+
+- Riwayat Pemesanan user
+- Cetak struk hasil pembayaran
+- Deskripsi dari menu makanan
+- Penyedian Vouchers diskon
+- Pembayaran secara otomatis tanpa harus upload bukti pembayaran
+- Jumlah menu makanan yang tersedia
+- fitur Search restoran bisa dicari secara langsung
