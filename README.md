@@ -143,23 +143,25 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 ![review](/images-laporan/user/review.jpg)
 ![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
 
-2. Admin
-   ![master-data](/images-laporan/admin/master-data.jpg)
-   ![data-category](/images-laporan/admin/data-category.jpg)
-   ![add-category](/images-laporan/admin/add-category.jpg)
-   ![data-menu](/images-laporan/admin/data-menu.jpg)
-   ![add-menu](/images-laporan/admin/add-menu.jpg)
-   ![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
-   ![data-laporan](/images-laporan/admin/data-laporan.jpg)
+### 2. Admin
 
-3. Superadmin
-   ![main](/images-laporan/superadmin/main.jpg)
-   ![register](/images-laporan/superadmin/register.jpg)
-   ![form-tambah-resto](/images-laporan/superadmin/form-tambah-resto.jpg)
-   ![form-tambah-kota](/images-laporan/superadmin/form-tambah-kota.jpg)
-   ![table-admin](/images-laporan/superadmin/table-admin.jpg)
-   ![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
-   ![table-resto](/images-laporan/superadmin/table-resto.jpg)
+![master-data](/images-laporan/admin/master-data.jpg)
+![data-category](/images-laporan/admin/data-category.jpg)
+![add-category](/images-laporan/admin/add-category.jpg)
+![data-menu](/images-laporan/admin/data-menu.jpg)
+![add-menu](/images-laporan/admin/add-menu.jpg)
+![data-transaksi](/images-laporan/admin/data-transaksi.jpg)
+![data-laporan](/images-laporan/admin/data-laporan.jpg)
+
+### 3. Superadmin
+
+![main](/images-laporan/superadmin/main.jpg)
+![register](/images-laporan/superadmin/register.jpg)
+![form-tambah-resto](/images-laporan/superadmin/form-tambah-resto.jpg)
+![form-tambah-kota](/images-laporan/superadmin/form-tambah-kota.jpg)
+![table-admin](/images-laporan/superadmin/table-admin.jpg)
+![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
+![table-resto](/images-laporan/superadmin/table-resto.jpg)
 
 nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 
