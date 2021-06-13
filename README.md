@@ -157,7 +157,7 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
    ![menu](/images-laporan/user/menu.jpg)
    ![pemesanan](/images-laporan/user/pemesanan.jpg)
    ![review](/images-laporan/user/review.jpg)
-   ![bukti-pembayaran](/images-laporan/admin/bukti-pembayaran.jpg)
+   ![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
 
 nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 
