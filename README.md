@@ -1,6 +1,5 @@
 # NoQ (NoQueue)
-
-butuh gambar homepage NoQ
+![homepage](/images-laporan/user/homepage.jpg)
 
 # Laporan Akhir Projek
 
@@ -193,7 +192,7 @@ nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 
 # Saran Untuk Pengembangan Selanjutnya
 
-- Riwayat Pemesanan user
+- Riwayat Pemesanan user lebih rapih
 - Cetak struk hasil pembayaran
 - Deskripsi dari menu makanan
 - Penyedian Vouchers diskon
