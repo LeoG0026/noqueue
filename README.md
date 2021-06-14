@@ -2,18 +2,15 @@
 ![homepage](/images-laporan/user/homepage.jpg)
 
 # Laporan Akhir Projek
-
 - KOM 331 | Rekayasa Perangkat Lunak | P2
 - Kelompok 5
 
 # Dibimbing oleh :
-
 - Ali Naufal Ammarullah
 - Levina S
 - Muhammad Fauzan Ramadhan
 
 # Tim Pengembang NoQ
-
 | Name                   | Nim       | Role            |
 | ---------------------- | --------- | --------------- |
 | Daffa Muhammad Subhan  | G64190013 | Back-end        |
@@ -22,21 +19,17 @@
 | Muhammad Jazuli        | G64190081 | UI/UX Designer  |
 
 # Deskripsi Singkat NoQ
-
 NoQ (No Queue) yang berarti "Tanpa Antri" merupakan sebuah aplikasi berbasis web yang bertujuan untuk memungkinkan pengguna bisa mengunjungi restoran tanpa harus mengantri. Aplikasi ini menawarkan pembayaran secara nontunai yang aman dan praktis. Sesuai dengan nama aplikasi ini, NoQ memberikan fitur yang dapat mereservasi tempat duduk tenpa harus datang ke restoran.
 
 # Latar Belakang
-
 Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk melakukan banyak aktifitas yang memakan banyak waktu. Terkadang semakin banyak pekerjaan dan aktifitas membuat kita tidak memiliki waktu untuk mendapatkan sumber energi tersebut, bahkan saat datang ke sebuah restoran atau tempat makan, seringkali kita dihadapkan dengan antrian yang sangat panjang sehingga kalian harus menunggu atau membawa pulang makanan kalian. Diiringi dengan kemajuan teknologi, manusia semakin dimudahkan dengan adanya teknologi-teknologi tersebut. NoQ hadir untuk menjadi sebuah solusi, memesan makanan serta tempat sebelum datang ke restoran menjadi hal yang mudah dan sangat efisien untuk membantu aktifitas. Tidak perlu mengantrI atau pulang karena restoran tersebut ramai. Hanya dengan hal tersebut, NoQ sangat membantu user dalam membuat aktifitas lebih efisien.
 
 # Tujuan
-
 - Memungkinkan pengguna memesan makanan sebelum datang ke restoran
 - Membantu pengguna menghindari antrean saat melakukan pemesanan makanan
 - Mempermudah pengguna untuk mereservasi tempat duduk yang tersedia
 
 # User Stories
-
 - Sebagai pengguna yang terdaftar, agar dapat mencari menu makanan yang saya inginkan, saya dapat mencarinya melalui pencarian
 - Sebagai pengguna yang telah logout, agar dapat menggunakan aplikasi secara personal, saya dapat login menggunakan alamat email untuk masuk ke aplikasi
 - Sebagai pengguna yang tidak mau menunggu lama, agar dapat melakukan pemesanan makanan tanpa antri , saya dapat memesan makanan sebelum datang ke restoran dan mereservasi tempat duduk yang tersedia
@@ -47,9 +40,7 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 - Sebagai pemilik restoran, agar dapat melihat laporan pemesanan, saya dapat melihat di bagian data laporan
 
 # Ruang Lingkup Pengembangan
-
 ## Software
-
 |                  |                       |
 | ---------------- | --------------------- |
 | Operating System | Windows 10, Linux     |
@@ -59,7 +50,6 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 | Server           | Apache                |
 
 ## Hardware
-
 | <!-- -->      | <!-- -->            |
 | ------------- | ------------------- |
 | Processor     | Intel Core i5-4210U |
@@ -68,7 +58,6 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 | Storage       | 1 TB                |
 
 ## Tech Stack
-
 | <!-- -->               | <!-- -->                       |
 | ---------------------- | ------------------------------ |
 | Collaboration Platform | Github                         |
@@ -76,30 +65,39 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 | Teknologi              | HTML, CSS, Javascript, dan PHP |
 
 # Hasil dan Pembahasan
-
 ## Use Case Diagram
-
 ![Usecase Diagram](/images-laporan/usecase.png)
 
 ## Activity Diagram
-
 ![Activity Diagram](/images-laporan/activity.png)
 ![Activity-Admin Diagram](/images-laporan/activity-admin.png)
 
-## Class Diagram
-
 ## Entity Relationship Diagram
-
 ![ERD](/images-laporan/erd.jpg)
 
 ## Arsitektur Sistem
-
 ![Arsitektur Aplikasi](/images-laporan/arsitektur_aplikasi.png)
 
 ## Fungsi Utama yang Dikembangkan
+### User
+* Pemesanan makanan
+* Edit foto, profil, foto profil
+* Memberikan rating pada resto setelah makan di resto
+* Sistem pembayaran online wallet
+* Memiliki sistem untuk reset password dengan email valid yang telah didaftarkan pada database
+
+### Admin
+* Menambah, melihat, dan menghapus kategori menu dan menunya
+* Menambah, melihat, dan menghapus meja pada restoran
+* Mengubah detail menu
+* Melihat dan menghapus order dan detail order
+
+### Superadmin
+* Menambah dan melihat lokasi kota pada restoran
+* Menambah, melihat, dan mengapus restoran yang terkait pada lokasi restoan
+* Menambah,melihat,dan menghapus admin yang terkait pada resto tersebut
 
 ## Fungsi CRUD
-
 | Domain Class     | CRUD   | Role                               |
 | ---------------- | ------ | ---------------------------------- |
 | Restoran (Admin) | Create | Membuat akun                       |
@@ -127,13 +125,9 @@ Makanan adalah sumber energi manusia, tanpa adanya energi sangat sulit untuk mel
 |                  | Delete | Menghapus akun                     |
 
 # Hasil Implementasi
-
 ## Screenshot Sistem
-
 Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
-
 ### 1. User
-
 ![homepage](/images-laporan/user/homepage.jpg)
 ![profile](/images-laporan/user/profile.jpg)
 ![meja](/images-laporan/user/meja.jpg)
@@ -143,7 +137,6 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 ![bukti-pembayaran](/images-laporan/user/bukti-pembayaran.jpg)
 
 ### 2. Admin
-
 ![master-data](/images-laporan/admin/master-data.jpg)
 ![data-category](/images-laporan/admin/data-category.jpg)
 ![add-category](/images-laporan/admin/add-category.jpg)
@@ -153,7 +146,6 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 ![data-laporan](/images-laporan/admin/data-laporan.jpg)
 
 ### 3. Super Admin
-
 ![main](/images-laporan/superadmin/main.jpg)
 ![register](/images-laporan/superadmin/register.jpg)
 ![form-tambah-resto](/images-laporan/superadmin/form-tambah-resto.jpg)
@@ -162,16 +154,7 @@ Dilampirkan screenshot hasil pengembangan perangkat lunak noqueue
 ![table-lokasi](/images-laporan/superadmin/table-lokasi.jpg)
 ![table-resto](/images-laporan/superadmin/table-resto.jpg)
 
-nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
-
-### link user
-
-### link admin
-
-### link superadmin
-
 # Testing (Test Cases)
-
 | domain class | Test Case Name                              | Action                                                                                 | Expected Result                                                                                         | Positive Case                                                             | Negative Case                                                                                 |
 | ------------ | ------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | User         | Check that user can go to NoQ               | Melakukan login/sign up                                                                | User akan dialihkan ke halaman utama                                                                    | User berhasil dialihkan                                                   | -                                                                                             |
@@ -191,7 +174,6 @@ nanti klo dah dideploy tinggal masukin link admin, user, sama superadmin
 |              | Change Status Pembayran                     | Menekan tombol 'valid' berwarna hijau atau 'invalid'berwarna merah pada data transaksi | status pembayaran user akan berubah menjadi warna hijau jika valid dan jika invalid akan berwarna merah | Admin berhasil megubah status pembayaran                                  | -                                                                                             |
 
 # Saran Untuk Pengembangan Selanjutnya
-
 - Riwayat Pemesanan user lebih rapih
 - Cetak struk hasil pembayaran
 - Deskripsi dari menu makanan
